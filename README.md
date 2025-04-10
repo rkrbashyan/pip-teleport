@@ -34,9 +34,8 @@ npm run dev
 ## How it Works
 
 1. The main Vue application creates a PiP window using the Document Picture-in-Picture API
-2. A container element is added to the PiP window's document body
-3. Vue's Teleport feature moves the component's rendered HTML to the PiP window
-4. Component logic continues to run in the main window
-5. State changes (like button clicks) reflect in the teleported UI
+2. Vue's Teleport feature moves the component's rendered HTML to the PiP window
+3. Component logic continues to run in the main window
+4. State changes (like button clicks) reflect in the teleported UI
 
 The power of this approach is that the component's logic remains in the Vue app's context while its DOM output appears in the PiP window.

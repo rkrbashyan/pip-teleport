@@ -122,7 +122,7 @@ onBeforeUnmount(closePiP);
       <li v-for="message in messagesFromPiP">{{ message }}</li>
     </ul>
 
-    <!-- Component to teleport to PiP and back -->
+    <!-- Component teleport to PiP and back -->
     <Teleport :to="pipWindow ? pipWindow.document.body : 'body'">
       <PipComponent :pipPort :isPiP />
     </Teleport>
